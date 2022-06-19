@@ -77,6 +77,7 @@ sleep 1
 ##处理php函数
 echo -e "${Info} 正在处理宝塔php内容"
 sed -i 's/system,//g' /www/server/php/71/etc/php.ini
+sed -i 's/putenv,//g' /www/server/php/71/etc/php.ini
 sed -i 's/proc_open,//g' /www/server/php/71/etc/php.ini
 sed -i 's/proc_get_status,//g' /www/server/php/71/etc/php.ini
 sed -i 's/dynamic/static/g' /www/server/php/71/etc/php-fpm.conf
